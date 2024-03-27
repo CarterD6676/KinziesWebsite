@@ -10,7 +10,7 @@ body {
 height: auto;
 display: grid;
   grid-template-columns: repeat(3, 1fr);
- grid-template-rows: 100px/*Title*/ 30px/* hr */ 150px/*Text*/ 650px/*og images*/ 900px/*toc*/ 100px/*May Title*/ 800px/*May images*/ 100px/*June Title*/ 800px/*June Images*/ 100px/*July Title*/ 400px/*July Images*/ 100px/*August Title*/ 800px/*August images*/ 100px/*September Title*/ 720px/*September Images*/ 100px/*Top Golf Text*/ 150px/*October Title*/ 800px/*October Images*/ 100px/*November Title*/ 750px/*November Images*/ 100px/*November Desc*/ 150px/*December Title*/ 800px/*December Images*/ 100px/*ktown Hoco Title*/ 800px/*ktown hoco Images #1*/ 700px/*ktown hoco images #2*/ 100px/*SHS hoco Title*/ 800px/*SHS hoco images #1*/ 600px/*SHS hoco Images #2*/ 100px/*4-H Fair Title*/ 300px/*4-H Fair images*/ 300px/*4-H Fair Images #2*/ 100px/*Notable Mentions Title*/ 800px/*Notable Mentions Images*/ 300px/*Notable Images #2*/ 100px/*Notable Images Desc*/ 150px/*January Heading*/ 800px/*January Images*/ 100px/*snoco Title*/ 800px/*snoco Images #1*/ 700px/*snoco images #2*/100px/*Feburary Title*/ 1000px/*Febuaray Images*/;
+ grid-template-rows: 100px/*Title*/ 30px/* hr */ 150px/*Text*/ 650px/*og images*/ 900px/*toc*/ 100px/*May Title*/ 800px/*May images*/ 100px/*June Title*/ 800px/*June Images*/ 100px/*July Title*/ 400px/*July Images*/ 100px/*August Title*/ 800px/*August images*/ 100px/*September Title*/ 720px/*September Images*/ 100px/*Top Golf Text*/ 150px/*October Title*/ 800px/*October Images*/ 100px/*November Title*/ 750px/*November Images*/ 100px/*November Desc*/ 150px/*December Title*/ 800px/*December Images*/ 100px/*ktown Hoco Title*/ 800px/*ktown hoco Images #1*/ 700px/*ktown hoco images #2*/ 100px/*SHS hoco Title*/ 800px/*SHS hoco images #1*/ 600px/*SHS hoco Images #2*/ 100px/*4-H Fair Title*/ 300px/*4-H Fair images*/ 300px/*4-H Fair Images #2*/ 100px/*Notable Mentions Title*/ 800px/*Notable Mentions Images*/ 300px/*Notable Images #2*/ 100px/*Notable Images Desc*/ 150px/*January Heading*/ 800px/*January Images*/ 100px/*snoco Title*/ 800px/*snoco Images #1*/ 700px/*snoco images #2*/100px/*Feburary Title*/ 800px/*Febuaray Images*/100px/*March Title*/ 800px/*March Images*/;
  grid-template-areas:
     "t t t"
     "hr hr hr"
@@ -56,6 +56,8 @@ display: grid;
     "snl1 snc1 snr1"
     "f24 f24 f24"
     "fl24 fc24 fr24"
+    "m24 m24 m24"
+    "ml24 mc24 mr24"
     /*New Months*/
     ". . ."
     "e e e"
@@ -822,6 +824,7 @@ font-size: 50px;
 }
 .febcenter img{
   width: 500px;
+  height: 700px;
   border: 5px solid  #bb04c0;
 }
 .febright {
@@ -833,7 +836,39 @@ font-size: 50px;
   width: 500px;
   border: 5px solid  #bb04c0;
 }
+.m24 {
+grid-area: m24;
+}
+.marchleft {
+  grid-area: ml24;
+  max-width: 100%;
+  height: auto;
+}
+.marchleft img{
+  width: 500px;
+  height: 700px;
+  border: 5px solid  #bb04c0;
+}
 
+.marchcenter {
+  grid-area: mc24;
+  max-width: 100%;
+  height: auto;
+}
+.marchcenter img{
+  width: 500px;
+  border: 5px solid  #bb04c0;
+}
+
+.marchright {
+  grid-area: mr24;
+  max-width: 100%;
+  height: auto;
+}
+.marchright img{
+  width: 400px;
+  border: 5px solid  #bb04c0;
+}
 
 .ending {
 grid-area: e;
