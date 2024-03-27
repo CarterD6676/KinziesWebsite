@@ -846,7 +846,7 @@ grid-area: m24;
 }
 .marchleft img{
   width: 500px;
-  height: 700px;
+ 
   border: 5px solid  #bb04c0;
 }
 
@@ -857,6 +857,7 @@ grid-area: m24;
 }
 .marchcenter img{
   width: 500px;
+  height: 700px;
   border: 5px solid  #bb04c0;
 }
 
