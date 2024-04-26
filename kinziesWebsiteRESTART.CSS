@@ -10,7 +10,7 @@ body {
 height: auto;
 display: grid;
   grid-template-columns: repeat(3, 1fr);
- grid-template-rows: 100px/*Title*/ 30px/* hr */ 150px/*Text*/ 650px/*og images*/ 900px/*toc*/ 100px/*May Title*/ 800px/*May images*/ 100px/*June Title*/ 800px/*June Images*/ 100px/*July Title*/ 400px/*July Images*/ 100px/*August Title*/ 800px/*August images*/ 100px/*September Title*/ 720px/*September Images*/ 100px/*Top Golf Text*/ 150px/*October Title*/ 800px/*October Images*/ 100px/*November Title*/ 750px/*November Images*/ 100px/*November Desc*/ 150px/*December Title*/ 800px/*December Images*/ 100px/*ktown Hoco Title*/ 800px/*ktown hoco Images #1*/ 700px/*ktown hoco images #2*/ 100px/*SHS hoco Title*/ 800px/*SHS hoco images #1*/ 600px/*SHS hoco Images #2*/ 100px/*4-H Fair Title*/ 300px/*4-H Fair images*/ 300px/*4-H Fair Images #2*/ 100px/*Notable Mentions Title*/ 800px/*Notable Mentions Images*/ 300px/*Notable Images #2*/ 100px/*Notable Images Desc*/ 150px/*January Heading*/ 800px/*January Images*/ 100px/*snoco Title*/ 800px/*snoco Images #1*/ 700px/*snoco images #2*/100px/*Feburary Title*/ 800px/*Febuaray Images*/100px/*March Title*/ 800px/*March Images*/;
+ grid-template-rows: 100px/*Title*/ 30px/* hr */ 150px/*Text*/ 650px/*og images*/ 900px/*toc*/ 100px/*May Title*/ 800px/*May images*/ 100px/*June Title*/ 800px/*June Images*/ 100px/*July Title*/ 400px/*July Images*/ 100px/*August Title*/ 800px/*August images*/ 100px/*September Title*/ 720px/*September Images*/ 100px/*Top Golf Text*/ 150px/*October Title*/ 800px/*October Images*/ 100px/*November Title*/ 750px/*November Images*/ 100px/*November Desc*/ 150px/*December Title*/ 800px/*December Images*/ 100px/*ktown Hoco Title*/ 800px/*ktown hoco Images #1*/ 700px/*ktown hoco images #2*/ 100px/*SHS hoco Title*/ 800px/*SHS hoco images #1*/ 600px/*SHS hoco Images #2*/ 100px/*4-H Fair Title*/ 300px/*4-H Fair images*/ 300px/*4-H Fair Images #2*/ 100px/*Notable Mentions Title*/ 800px/*Notable Mentions Images*/ 300px/*Notable Images #2*/ 100px/*Notable Images Desc*/ 150px/*January Heading*/ 800px/*January Images*/ 100px/*snoco Title*/ 800px/*snoco Images #1*/ 700px/*snoco images #2*/100px/*Feburary Title*/ 800px/*Febuaray Images*/100px/*March Title*/ 800px/*March Images*/ 100px /*Prom Title*/ 800px /*proom row 1 */800px/*prom row 2*/ 800px /*prom row 3*/ 100px /*April Label*/ 800px /*April Images*/ 300px /*Anniversary*/ ;
  grid-template-areas:
     "t t t"
     "hr hr hr"
@@ -58,7 +58,16 @@ display: grid;
     "fl24 fc24 fr24"
     "m24 m24 m24"
     "ml24 mc24 mr24"
+    "p24 p24 p24"
+    "pl24 pc24 pr24"
+    "pl24-1 pc24-1 pr24-1"
+    "pl24-2 pc24-2 pr24-2"
+    "ap24 ap24 ap24"
+    "apl24 apc24 apr24"
+    "anniv24 anniv24 anniv24"
+
     /*New Months*/
+    "nmt nmt nmt"
     ". . ."
     "e e e"
     ". . ."
@@ -870,10 +879,155 @@ grid-area: m24;
   width: 400px;
   border: 5px solid  #bb04c0;
 }
+.p24 {
+  grid-area:p24;
+}
+.pl24 {
+  grid-area: pl24;
+  max-width: 100%;
+  height: auto;
+}
+.pl24 img{
+  width: 500px;
+  border: 5px solid  #bb04c0;
+  height: 655px;
+}
 
+.pc24 {
+  grid-area: pc24;
+  max-width: 100%;
+  height: auto;
+}
+
+.pc24 img{
+  width: 500px;
+  border: 5px solid  #bb04c0;
+}
+
+.pr24 {
+  grid-area: pr24;
+  max-width: 100%;
+  height: auto;
+}
+
+.pr24 img{
+  width: 500px;
+  border: 5px solid  #bb04c0;
+}
+
+.pl24-1 {
+  grid-area: pl24-1;
+  max-width: 100%;
+  height: auto;
+}
+
+.pl24-1 img{
+  width: 500px;
+  border: 5px solid  #bb04c0;
+}
+
+.pc24-1 {
+  grid-area: pc24-1;
+  max-width: 100%;
+  height: auto;
+}
+.pc24-1 img{
+  width: 500px;
+  border: 5px solid  #bb04c0;
+}
+
+.pr24-1 {
+  grid-area: pr24-1;
+  max-width: 100%;
+  height: auto;
+}
+
+.pr24-1 img{
+  width: 500px;
+  border: 5px solid  #bb04c0;
+  height: 670px;
+}
+.pl24-2 {
+  grid-area: pl24-2;
+  max-width: 100%;
+  height: auto;
+}
+
+.pl24-2 img{
+  width: 500px;
+  border: 5px solid  #bb04c0;
+}
+
+.pc24-2 {
+  grid-area: pc24-2;
+  max-width: 100%;
+  height: auto;
+}
+.pc24-2 img{
+  width: 500px;
+  border: 5px solid  #bb04c0;
+}
+
+.pr24-2 {
+  grid-area: pr24-2;
+  max-width: 100%;
+  height: auto;
+}
+
+.pr24-2 img{
+  width: 500px;
+  border: 5px solid  #bb04c0;
+  height: 670px;
+}
+
+.ap24 {
+  grid-area: ap24;
+  }
+  .apl24 {
+    grid-area: apl24;
+    max-width: 100%;
+    height: auto;
+  }
+  .apl24 img{
+    width: 500px;
+    height: 700px;
+    border: 5px solid  #bb04c0;
+  }
+  
+  .apc24 {
+    grid-area: apc24;
+    max-width: 100%;
+    height: auto;
+  }
+  .apc24 img{
+    width: 500px;
+    height: 700px;
+    border: 5px solid  #bb04c0;
+  }
+  
+  .apr24 {
+    grid-area: apr24;
+    max-width: 100%;
+    height: auto;
+  }
+  .apr24 img{
+    width: 400px;
+    border: 5px solid  #bb04c0;
+  }
+
+
+.anniversary24 {
+  grid-area: anniv24
+}
+
+
+.nmt {
+  grid-area: nmt;
+}
 .ending {
 grid-area: e;
 }
+
 .btt {
 grid-area: top;
 }
