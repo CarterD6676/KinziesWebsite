@@ -10,7 +10,7 @@ body {
 height: auto;
 display: grid;
   grid-template-columns: repeat(3, 1fr);
- grid-template-rows: 100px/*Title*/ 30px/* hr */ 150px/*Text*/ 650px/*og images*/ 900px/*toc*/ 100px/*May Title*/ 800px/*May images*/ 100px/*June Title*/ 800px/*June Images*/ 100px/*July Title*/ 400px/*July Images*/ 100px/*August Title*/ 800px/*August images*/ 100px/*September Title*/ 720px/*September Images*/ 100px/*Top Golf Text*/ 150px/*October Title*/ 800px/*October Images*/ 100px/*November Title*/ 750px/*November Images*/ 100px/*November Desc*/ 150px/*December Title*/ 800px/*December Images*/ 100px/*ktown Hoco Title*/ 800px/*ktown hoco Images #1*/ 700px/*ktown hoco images #2*/ 100px/*SHS hoco Title*/ 800px/*SHS hoco images #1*/ 600px/*SHS hoco Images #2*/ 100px/*4-H Fair Title*/ 300px/*4-H Fair images*/ 300px/*4-H Fair Images #2*/ 100px/*Notable Mentions Title*/ 800px/*Notable Mentions Images*/ 300px/*Notable Images #2*/ 100px/*Notable Images Desc*/ 150px/*January Heading*/ 800px/*January Images*/ 100px/*snoco Title*/ 800px/*snoco Images #1*/ 700px/*snoco images #2*/100px/*Feburary Title*/ 800px/*Febuaray Images*/100px/*March Title*/ 800px/*March Images*/ 100px /*Prom Title*/ 800px /*proom row 1 */800px/*prom row 2*/ 800px /*prom row 3*/ 100px /*April Label*/ 800px /*April Images*/  100px /* Label*/ 800px /*May Images*/ 100px /*June Label*/ 800px /*June Images*/ 100px /*July Title*/ 800px /*July Images*/ 100px /*August Title*/ 800px /*August Pictures*/ 300px /*Anniversary*/;
+ grid-template-rows: 100px/*Title*/ 30px/* hr */ 150px/*Text*/ 650px/*og images*/ 900px/*toc*/ 100px/*May Title*/ 800px/*May images*/ 100px/*June Title*/ 800px/*June Images*/ 100px/*July Title*/ 400px/*July Images*/ 100px/*August Title*/ 800px/*August images*/ 100px/*September Title*/ 720px/*September Images*/ 100px/*Top Golf Text*/ 150px/*October Title*/ 800px/*October Images*/ 100px/*November Title*/ 750px/*November Images*/ 100px/*November Desc*/ 150px/*December Title*/ 800px/*December Images*/ 100px/*ktown Hoco Title*/ 800px/*ktown hoco Images #1*/ 700px/*ktown hoco images #2*/ 100px/*SHS hoco Title*/ 800px/*SHS hoco images #1*/ 600px/*SHS hoco Images #2*/ 100px/*4-H Fair Title*/ 300px/*4-H Fair images*/ 300px/*4-H Fair Images #2*/ 100px/*Notable Mentions Title*/ 800px/*Notable Mentions Images*/ 300px/*Notable Images #2*/ 100px/*Notable Images Desc*/ 150px/*January Heading*/ 800px/*January Images*/ 100px/*snoco Title*/ 800px/*snoco Images #1*/ 700px/*snoco images #2*/100px/*Feburary Title*/ 800px/*Febuaray Images*/100px/*March Title*/ 800px/*March Images*/ 100px /*Prom Title*/ 800px /*proom row 1 */800px/*prom row 2*/ 800px /*prom row 3*/ 100px /*April Label*/ 800px /*April Images*/  100px /* Label*/ 800px /*May Images*/ 100px /*June Label*/ 800px /*June Images*/ 100px /*July Title*/ 800px /*July Images*/ 100px /*August Title*/ 800px /*August Pictures*/ 100px /*September Label*/ 100px /*September Pictures*/ 800px 100px   300px /*Anniversary*/;
  grid-template-areas:
     "t t t"
     "hr hr hr"
@@ -72,6 +72,8 @@ display: grid;
     "jyc24 jyl24 jyr24"
     "a24 a24 a24"
     "al24 ac24 ar24"
+    "sep24 sep24 sep24"
+    "sepl24 sepc24 sepr24"
 
 
 
@@ -1173,6 +1175,42 @@ grid-area: m24;
       }
   
 
+
+
+      .sep24 {
+        grid-area: sep24;
+        }
+        .sepl24 {
+          grid-area: sepl24;
+          max-width: 100%;
+          height: auto;
+        }
+        .sepl24 img{
+          width: 400px;
+          border: 5px solid  #bb04c0;
+        }
+        
+        .sepc24 {
+          grid-area: sepc24;
+          max-width: 100%;
+          height: auto;
+        }
+        .sepc24 img{
+          width: auto;
+          height: 400px;
+          border: 5px solid  #bb04c0;
+        }
+        
+        .sepr24 {
+          grid-area: sepr24;
+          max-width: 100%;
+          height: auto;
+        }
+        .sepr24 img{
+          width: auto;
+          height: 750px;
+          border: 5px solid  #bb04c0;
+        }
 
 
 
